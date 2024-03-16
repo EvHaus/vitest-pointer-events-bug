@@ -1,4 +1,3 @@
-import Button from './Button';
 import clsx from 'clsx';
 import React from 'react';
 
@@ -55,7 +54,7 @@ const Pagination = ({
 
 	return (
 		<div className={clsx(styles.main, className)}>
-			<Button
+			<button
 				appearance='minimal'
 				icon='chevron-left'
 				isDisabled={!isPrevEnabled}
@@ -64,16 +63,16 @@ const Pagination = ({
 				option === '...' ? (
 					<div className={styles.ellipsis} key={i}>...</div>
 				) : (
-					<Button
+					<button
 						appearance='minimal'
 						isSelected={option === page}
 						key={`${option}-${i}`}
 						onClick={() => onPageChange(option)}>
 						{option}
-					</Button>
+					</button>
 				)
 			))}
-			<Button
+			<button
 				appearance='minimal'
 				icon='chevron-right'
 				isDisabled={!isNextEnabled}
