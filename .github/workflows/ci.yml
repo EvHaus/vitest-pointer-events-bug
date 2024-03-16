@@ -8,17 +8,16 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v4
-        - uses: pnpm/action-setup@v2
-          name: Install pnpm
-          with:
-            version: 'latest'
+
         - name: Use Node.js
           uses: actions/setup-node@v4
           with:
             node-version: '20'
-            cache: 'pnpm'
-        - name: Install dependencies
-          run: pnpm i
+            cache: 'yarn'
+        
+        - name: Install
+          run: yarn install --immutable
+
         - name: Test
-          run: pnpm test
+          run: yarn test
         
