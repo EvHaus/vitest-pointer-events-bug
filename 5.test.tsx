@@ -1,5 +1,5 @@
 import {describe, expect, it, vi} from 'vitest';
-import Pagination from './Pagination';
+import Pagination from './';
 import React from 'react';
 import {render} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
