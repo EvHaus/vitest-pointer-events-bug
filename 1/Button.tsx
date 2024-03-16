@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import Icon from "./Icon";
 import type { IconName } from "@blueprintjs/icons";
 import React from "react";
 import Spinner from "./Spinner";
