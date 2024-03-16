@@ -1,7 +1,8 @@
 import Button from '../Button';
 import clsx from 'clsx';
 import React from 'react';
-import styles from './Pagination.module.css';
+
+const styles = {};
 
 type PropsType = {
 	className?: string | null,

@@ -1,7 +1,8 @@
 import {type IconName, iconNameToPathsRecordKey, IconSvgPaths16, IconSvgPaths20} from '@blueprintjs/icons';
 import clsx from 'clsx';
 import React from 'react';
-import styles from './Icon.module.css';
+
+const styles = {};
 
 type PropsType = {
 	className?: string | null,
