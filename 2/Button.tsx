@@ -91,12 +91,6 @@ const Button = React.forwardRef<RefType, PropsType>(
 							color={appearance === "primary" ? "white" : "default"}
 							size={14}
 						/>
-					) : icon ? (
-						<Icon
-							className={children ? styles.iconWithText : null}
-							name={icon}
-							size={14}
-						/>
 					) : null
 				}
 				{children}
